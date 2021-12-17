@@ -1,6 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: epresa-c <epresa-c@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/12/17 13:39:22 by epresa-c          #+#    #+#              #
+#    Updated: 2021/12/17 15:15:19 by epresa-c         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libftprintf.a
 
-SRCS = ft_printf.c ft_printf_outils.c
+SRCS = ft_printf.c ft_printf_outils1.c ft_printf_outils2.c
 
 OBJ = $(SRCS:.c=.o)
 
