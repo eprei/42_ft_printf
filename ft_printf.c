@@ -6,7 +6,7 @@
 /*   By: epresa-c <epresa-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/17 13:38:28 by epresa-c          #+#    #+#             */
-/*   Updated: 2021/12/17 15:44:31 by epresa-c         ###   ########.fr       */
+/*   Updated: 2021/12/17 17:40:39 by epresa-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int	ft_switch(char conversion, va_list ap)
 	else if (conversion == 'p')
 		return (ft_str_putnbr_pointer(va_arg(ap, unsigned long)));
 	else if (conversion == 'd' || conversion == 'i')
-		return (ft_itoa(va_arg(ap, int)));
+		return (ft_putstr_itoa(ft_itoa(va_arg(ap, int))));
 	else if (conversion == 'u')
 		return (ft_u_itoa(va_arg(ap, unsigned int)));
 	else if (conversion == 'x')

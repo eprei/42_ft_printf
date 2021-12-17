@@ -6,7 +6,7 @@
 /*   By: epresa-c <epresa-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/17 13:38:58 by epresa-c          #+#    #+#             */
-/*   Updated: 2021/12/17 15:48:48 by epresa-c         ###   ########.fr       */
+/*   Updated: 2021/12/17 17:40:41 by epresa-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ int		ft_switch(char conversion, va_list ap);
 int		ft_putchar(char c);
 int		ft_u_itoa(unsigned int n);
 int		ft_u_intlen(unsigned int c);
-int		ft_itoa(int n);
+char	*ft_itoa(int n);
+int		ft_putstr_itoa(char *str);
 int		ft_intlen(int c);
 int		ft_putnbr_hex_min(unsigned int n);
 int		ft_putnbr_hex_maj(unsigned int n);

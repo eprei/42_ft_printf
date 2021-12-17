@@ -6,13 +6,13 @@
 /*   By: epresa-c <epresa-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/17 15:14:38 by epresa-c          #+#    #+#             */
-/*   Updated: 2021/12/17 15:46:48 by epresa-c         ###   ########.fr       */
+/*   Updated: 2021/12/17 17:40:40 by epresa-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char			*ptr;
 	unsigned int	len_n;
@@ -37,9 +37,24 @@ int	ft_itoa(int n)
 		m = m / 10;
 		len_n--;
 	}
-	ft_putstr_printf(ptr);
-	free(ptr);
-	return (ft_intlen(n));
+	return (ptr);
+}
+
+int	ft_putstr_itoa(char *str)
+{
+	int		count;
+	char	*conversion;
+
+	conversion = str;
+	count = 0;
+	while (*str)
+	{
+		write(1, str, 1);
+		str++;
+		count++;
+	}
+	free(conversion);
+	return (count);
 }
 
 int	ft_intlen(int c)
