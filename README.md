@@ -16,6 +16,22 @@ The ft_printf project aims to recreate the functionality of the standard printf 
 - `%X` - Print a number in hexadecimal with uppercase letters
 - `%%` - Print a percent sign
 
+## Code Style - The Norm
+
+This project follows the strict coding standards of 42 School, known as "The Norm". These standards enforce a specific code style that might seem restrictive compared to modern practices but serves educational purposes. Some key aspects include:
+
+- Variables must be declared and initialized separately
+- Each function must contain a maximum of 25 lines
+- Each line must be at most 80 characters long
+- A maximum of 4 parameters for each function
+- Variable declarations must be at the start of a function
+- Only while loops are allowed (no for, do while, etc.)
+- No assignments inside conditionals
+- No multiple assignments on a single line
+- No comments inside functions
+
+These restrictions mean that some IDE suggestions for "improvements" must be ignored to maintain compliance with the school's standards. While modern IDEs like CLion might suggest more efficient or cleaner ways to write certain parts of the code, adherence to The Norm takes precedence in this academic context.
+
 ## Technical Details
 
 The project is structured into several files:
