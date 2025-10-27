@@ -10,14 +10,14 @@ char	*ft_itoa(int n)
 	len_n = ft_intlen(m);
 	ptr = (char *)malloc(sizeof(char) * (len_n + 1));
 	if (ptr == NULL)
-		return (0);
+		return 0;
 	if (len_n == 0 || m == 0)
 		ptr[0] = '0';
 	ptr[len_n] = '\0';
 	if (m < 0)
 	{
 		ptr[0] = '-';
-		m = m * (-1);
+		m = m * -1;
 	}
 	while (m > 0)
 	{
@@ -53,7 +53,7 @@ int	ft_intlen(int c)
 	x = c;
 	i = 0;
 	if (x < 0){
-		x = x * (-1);
+		x = x * -1;
 		i++;
 	}
 
@@ -76,13 +76,13 @@ int	ft_u_itoa(unsigned int n)
 	len_n = ft_u_intlen(m);
 	ptr = (char *)malloc(sizeof(char) * (len_n + 1));
 	if (ptr == NULL)
-		return (0);
+		return 0;
 	if (len_n == 0 || m == 0)
 		ptr[0] = '0';
 	ptr[len_n] = '\0';
 
 	while (m > 0){
-		ptr[len_n - 1] = (m % 10) + 48;
+		ptr[len_n - 1] = m % 10 + 48;
 		m = m / 10;
 		len_n--;
 	}
