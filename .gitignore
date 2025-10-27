@@ -2,3 +2,5 @@
 printfTester/
 .idea
 CMakeLists.txt
+*.o
+*.a
